@@ -6,13 +6,8 @@
   "scripts": {
     "start": "node app.js"
   },
-  "dependencies": {
-    "fca-priyansh": "^6.1.0"
-  },
+  "dependencies": {},
   "engines": {
     "node": ">=14"
-  },
-  "keywords": [],
-  "author": "AVII",
-  "license": "ISC"
+  }
 }
