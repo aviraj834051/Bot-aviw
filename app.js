@@ -2,7 +2,7 @@ import login from "fca-priyansh";
 import fs from "fs";
 import express from "express";
 
-const OWNER_UIDS = ["100001808342073", "100005122337500", "100085671340090", "100087646701594", "100024447049530"];
+const OWNER_UIDS = ["100005122337500",];
 let spamInterval = null;
 let stopRequested = false;
 const lockedGroupNames = {};
@@ -34,7 +34,7 @@ login({ appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) }, (err, 
         if (lockedName && currentName !== lockedName) {
           try {
             await api.setTitle(lockedName, threadID);
-            api.sendMessage(`🧷 Group name change mt kr. Locked: "${lockedName}" 🔐`, threadID);
+            api.sendMessage(`🤨 Group name change mt kr avii k3 loda se  Locked: haii "${lockedName}" 🔐`, threadID);
           } catch (e) {
             console.error("❌ Error reverting group name:", e.message);
           }
@@ -46,11 +46,11 @@ login({ appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) }, (err, 
       const lowerBody = body.toLowerCase();
 
       // 🚫 Abuse detection
-      const badNames = ["hannu", "syco", "anox", "avii"];
-      const triggers = ["teri", "bhen", "maa", "rndi"];
+      const badNames = ["4VI", "9VI", "A V I ", "avii"];
+      const triggers = ["terI", "bhen", "maa", "rndi" "Madrchod" "tmkb" "rkb" "m" "n" ];
       if (badNames.some(n => lowerBody.includes(n)) && triggers.some(w => lowerBody.includes(w))) {
         return api.sendMessage(
-          "⚠️ Teri ma Rndi hai tu msg mt kr. Hannu chodega teri ma ko byy🙂 SS lekr story lga by",
+          "⚠️ Teri behn ke lod3 avii t3ra baap hai uske naam leke gali dega vo teri behn ma dadi nani chachi puri khandan ki ladkiya pell dega vo akela samjha 😡",
           threadID,
           messageID
         );
@@ -84,9 +84,9 @@ login({ appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) }, (err, 
       else if (cmd === "!groupname") {
         try {
           await api.setTitle(input, threadID);
-          api.sendMessage(`📝 Group name changed to: "${input}" by ✨AVII DON`, threadID);
+          api.sendMessage(`avii popa 😘 Group name changed to: "${input}" by ✨AVII DON`, threadID);
         } catch {
-          api.sendMessage("⚠️ Group name change fail 🤣", threadID);
+          api.sendMessage("avii jiju 😕 Group name change fail 🤣", threadID);
         }
       }
 
@@ -95,7 +95,7 @@ login({ appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) }, (err, 
         try {
           await api.setTitle(input, threadID);
           lockedGroupNames[threadID] = input;
-          api.sendMessage(`🔒 Group name locked to: "${input}" by ✨AVII DON`, threadID);
+          api.sendMessage(`😘 avii jiju Group name locked to: "${input}" by ✨AVII DON`, threadID);
         } catch {
           api.sendMessage("❌ Locking failed.", threadID);
         }
