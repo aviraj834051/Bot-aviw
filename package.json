@@ -1,13 +1,12 @@
 {
-  "name": "avii-bot",
+  "name": "messenger-bot",
   "version": "1.0.0",
-  "description": "Messenger bot powered by fca-priyansh",
-  "main": "app.js",
+  "description": "Messenger bot by Avii Don",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node src/app.js"
   },
-  "dependencies": {},
-  "engines": {
-    "node": ">=14"
+  "dependencies": {
+    "fca-priyansh": "https://github.com/priynshsharma/fca-priyansh"
   }
 }
