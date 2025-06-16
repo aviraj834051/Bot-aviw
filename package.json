@@ -6,6 +6,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "fca-priyansh": "git+https://github.com/aviram834051/fca-priyansh.git"
+    "fca-priyansh": "git+https://github.com/itz-vivek-07/fca-priyansh.git"
   }
 }
