@@ -1,12 +1,11 @@
 {
-  "name": "messenger-bot",
+  "name": "avibot",
   "version": "1.0.0",
-  "description": "Messenger bot by Avii Don",
-  "main": "src/app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "fca-priyansh": "^2.0.0"
+    "fca-priyansh": "git+https://github.com/aviram834051/fca-priyansh.git"
   }
 }
