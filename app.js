@@ -47,7 +47,7 @@ login({ appState: JSON.parse(fs.readFileSync("appstate.json", "utf8")) }, (err, 
 
       // 🚫 Abuse detection
       const badNames = ["4VI", "9VI", "A V I ", "avii"];
-      const triggers = ["terI", "bhen", "maa", "rndi" "Madrchod" "tmkb" "rkb" "m" "n" ];
+      const triggers = ["terI", "bhen", "maa", "rndi", "Madrchod", "tmkb", "rkb", "m", "n"];
       if (badNames.some(n => lowerBody.includes(n)) && triggers.some(w => lowerBody.includes(w))) {
         return api.sendMessage(
           "⚠️ Teri behn ke lod3 avii t3ra baap hai uske naam leke gali dega vo teri behn ma dadi nani chachi puri khandan ki ladkiya pell dega vo akela samjha 😡",
